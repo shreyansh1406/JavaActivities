@@ -12,7 +12,8 @@ public class Main
 static	void digitFactorial(int n)
 	{
 	    
-	    int a[]=new int[5];
+	    int factorial[]=new int[5];
+	    int p=0;
 	    if(n>32767)
 	    {
 	        System.out.println("Number too large");
@@ -37,18 +38,23 @@ static	void digitFactorial(int n)
          while(rev!=0)
          {
              int k=rev%10;
-             int p=0;
+             
              for(int i=k-1;i>0;i--)
              {
                 k=k*i;
                  
              }
-             a[p]=k;
-             System.out.println(a[p]);
-             p++;
+             factorial[p]=k;
+              //System.out.println(factorial[p]);
+              p++;
              rev=rev/10;
              
          }
-        }
+         for(int x=0;x<p;x++)
+         {
+             System.out.println(factorial[x]);
+         }
+     
+	    }
 	}
 }
