@@ -11,6 +11,7 @@ public class Main
     s2 = sc.nextLine ();
     String a = s1.substring (0, 1);
     String b = s1.substring (1, s1.length ());
+    b=b.toLowerCase();
     a = a.toUpperCase();
     s1 = a+b;
     System.out.println ("The Final String is");
