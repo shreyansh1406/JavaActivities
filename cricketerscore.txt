@@ -4,7 +4,7 @@ public class Main
 	public static void main(String[] args) {
 	    int n,s;
 	    Scanner sc = new Scanner(System.in);
-        System.out.print("Enter no. of elements you want in array:");
+        System.out.println("Enter no. of elements you want in array with id");
         n = sc.nextInt();
         
         if(n<0)
@@ -24,7 +24,7 @@ public class Main
             System.exit(0);
             }
         }
-        System.out.print("Enter the given Score:");
+        System.out.print("Enter the given Score along with id:");
         s = sc.nextInt();
         if(s<0)
             {
@@ -40,22 +40,19 @@ public class Main
 	{
 	    int cricketer[]=new int[n];
 	    int c=0;
-	    for(int i = 0; i < n; i++)
+	    for(int i = 1; i < n; i+=2)
         {
             if(a[i]>e)
             {
-                cricketer[i]=a[i];
+                cricketer[i]=a[i-1];
             }
         }
         for(int i = 0; i < n; i++)
         {
             if(cricketer[i]==0)
-            {
-                continue;
-                
-            }
+            continue;
             else
-            System.out.println("Crickter's id is"+ (i+1));
+            System.out.println("Crickter's id is "+ cricketer[i]);
             
         }
 	}
