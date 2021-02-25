@@ -55,7 +55,7 @@ public class Main
                 
             }
             else
-            System.out.println("Crickter's id is"+ i);
+            System.out.println("Crickter's id is"+ (i+1));
             
         }
 	}
