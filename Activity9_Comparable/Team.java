@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class Team implements Comparable<Team>{
 private String name;
-private List<Playerclass> playerList;
+private List<Playerclass> playerList=new ArrayList<Playerclass>();
 
 public Team(String name) {
 	super();
